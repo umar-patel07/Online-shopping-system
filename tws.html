@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login | By Code Info</title>
+    <link rel="stylesheet" href="C:\Online Shopping\ASSET\CSS\login.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <a href ="index.html">
+        <img src="https://cdn.picpng.com/button/back-button-arrow-icon-52394.png" alt="" width="50px">
+    </a>
+    <div class="login-box">
+        <font style="font-size: smaller; color: red;">Enter  all fields  for login</font>
+        <h1>Login</h1>
+        <form>
+            <label>Email</label>
+            <div data-aos="zoom-in-right">
+            <input type="email" placeholder="Enter Your Email  Address" required />
+            </div>
+            <label>Password</label>
+            <div data-aos="zoom-in-left">
+            <input type="password" placeholder="password" required />
+            </div>
+            <input type="button" value="LOGIN" onclick="myFunction()"  id="loginButton" hidden/><br><br>
+            <input type="button" value=" SIGN UP" onclick=" window.location.href='signup.html'" />
+            <closeform></closeform>
+        </form>
+    </div>
+    <script>
+    //    / Enable the login button if all required fields are filled up
+        const emailInput = document.querySelector('input[type="email"]');
+        const passwordInput = document.querySelector('input[type="password"]');
+        const loginButton = document.getElementById('loginButton');
+
+        function checkFields() {
+            loginButton.hidden = !(emailInput.value && passwordInput.value);
+        }
+
+        emailInput.addEventListener('input', checkFields);
+        passwordInput.addEventListener('input', checkFields);
+
+        function myFunction() {
+            alert('LOGIN SUCCESSFUL');
+        }
+
+       
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            delay: 200,
+            offset: 100,
+        });
+    </script>
+</body>
+
+</html>

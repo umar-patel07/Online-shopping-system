@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile Shop</title>
+    <link rel="stylesheet" href="C:\Huzaifa Internship\ASSET\CSS\Style2.css">
+    <!--------------------- Bootstrap Links ------------------>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="C:\Huzaifa Internship\ASSET\Images\LOGO.lnk">
+    <!-- Google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <!-- boxicons icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <!-- Top Navbar -->
+        <div class="top-navbar">
+            <p>WELCOME TO OUR SHOP</p>
+            <div class="icons">
+                <i class='bx bxs-cart' id="cart-icon"></i>
+            </div>
+        </div>
+        <!-- Top Navbar -->
+
+        <div class="modal" id="modelExp" tabindex="-1" aria-labelledby="PopUp" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="model-content">
+                    <div class="modal-header">
+                        <h1>Successfully Added to Cart</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html" id="Logo">S<span id="span1">mile</span> <span>Shop</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span><img src="C:\Huzaifa Internship\ASSET\Images\menu.png" alt="menu" width="30px"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Product</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                style="background-color: rgb(67 0 86);">
+                                <li><a class="dropdown-item" href="smartphone.html">Smart Phone</a></li>
+                                <li><a class="dropdown-item" href="#">Mobile Phone</a></li>
+                                <li><a class="dropdown-item" href="#">Cameras</a></li>
+                                <li><a class="dropdown-item" href="#">Fridges</a></li>
+                                <li><a class="dropdown-item" href="#">AC</a></li>
+                                <li><a class="dropdown-item" href="#">Smart Watch</a></li>
+                                <li><a class="dropdown-item" href="Headphone.html">Headphone</a></li>
+                                <li><a class="dropdown-item" href="#">Laptop</a></li>
+                                <li><a class="dropdown-item" href="#">PC Monitor</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About Us.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="C:\Huzaifa Internship\Contact2.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" id="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cart">
+            <h2 class="cart-title">Shopping Cart</h2>
+
+            <div class="cart-content">
+                <div class="cart-box">
+                    <img src="C:\Online Shopping\ASSET\IMAGES\Washing Machine.png" alt="" class="cart-img">
+                    <div class="detail-box">
+                        <div class="cart-product-title">Washing Machine</div>
+                        <div class="cart-price">₹25000</div>
+                        <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    <!-- REMOVE CART -->
+                    <i class='bx bxs-trash cart-remove'></i>
+                </div>
+
+                <div class="cart-content">
+                    <div class="cart-box">
+                        <img src="C:\Online Shopping\ASSET\IMAGES\Cooler.png" alt="" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-product-title">Cooler</div>
+                            <div class="cart-price">₹15000</div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <!-- REMOVE CART -->
+                        <i class='bx bxs-trash cart-remove'></i>
+                    </div>
+
+                    <div class="cart-content">
+                        <div class="cart-box">
+                            <img src="C:\Online Shopping\ASSET\IMAGES\MicroOven.png" alt="" class="cart-img">
+                            <div class="detail-box">
+                                <div class="cart-product-title">Micro Oven</div>
+                                <div class="cart-price">₹13000</div>
+                                <input type="number" value="1" class="cart-quantity">
+                            </div>
+                            <!-- REMOVE CART -->
+                            <i class='bx bxs-trash cart-remove'></i>
+                        </div>
+
+                        <div class="cart-content">
+                            <div class="cart-box">
+                                <img src="C:\Online Shopping\ASSET\IMAGES\Fridge.png" alt="" class="cart-img">
+                                <div class="detail-box">
+                                    <div class="cart-product-title">Fridges</div>
+                                    <div class="cart-price">₹25000</div>
+                                    <input type="number" value="1" class="cart-quantity">
+                                </div>
+                                <!-- REMOVE CART -->
+                                <i class='bx bxs-trash cart-remove'></i>
+                            </div>
+
+                            <div class="cart-content">
+                                <div class="cart-box">
+                                    <img src="C:\Online Shopping\ASSET\IMAGES\Fan.png" alt="" class="cart-img">
+                                    <div class="detail-box">
+                                        <div class="cart-product-title">Fan</div>
+                                        <div class="cart-price">₹5000</div>
+                                        <input type="number" value="1" class="cart-quantity">
+                                    </div>
+                                    <!-- REMOVE CART -->
+                                    <i class='bx bxs-trash cart-remove'></i>
+                                </div>
+
+                                <div class="cart-content">
+                                    <div class="cart-box">
+                                        <img src="https://tse1.mm.bing.net/th?id=OIP.DwyHGzUkajpq4Wa-PGtp-QHaGS&pid=Api&P=0&h=180" alt="" class="cart-img">
+                                        <div class="detail-box">
+                                            <div class="cart-product-title">SMART TV's</div>
+                                            <div class="cart-price">₹25000</div>
+                                            <input type="number" value="1" class="cart-quantity">
+                                        </div>
+                                        <!-- REMOVE CART -->
+                                        <i class='bx bxs-trash cart-remove'></i>
+                                    </div>
+
+                                    <div class="cart-content">
+                                        <div class="cart-box">
+                                            <img src="C:\Online Shopping\ASSET\IMAGES\Gaming CPU.png" alt="" class="cart-img">
+                                            <div class="detail-box">
+                                                <div class="cart-product-title">Gaming CPU</div>
+                                                <div class="cart-price">₹23000</div>
+                                                <input type="number" value="1" class="cart-quantity">
+                                            </div>
+                                            <!-- REMOVE CART -->
+                                            <i class='bx bxs-trash cart-remove'></i>
+                                        </div>
+
+                                        <div class="cart-content">
+                                            <div class="cart-box">
+                                                <img src="C:\Online Shopping\ASSET\IMAGES\Gaming Monitor.png" alt="" class="cart-img">
+                                                <div class="detail-box">
+                                                    <div class="cart-product-title">Gaming Monitor</div>
+                                                    <div class="cart-price">₹15000</div>
+                                                    <input type="number" value="1" class="cart-quantity">
+                                                </div>
+                                                <!-- REMOVE CART -->
+                                                <i class='bx bxs-trash cart-remove'></i>
+                                            </div>
+
+                                        
+            </div>
+
+            <!-- TOTAL -->
+            <div class="total">
+                <div class="total-title">TOTAL</div>
+                <div class="total-price">₹0</div>
+            </div>
+
+            <!-- BUY BUTTON -->
+            <button type="button" class="btn-buy">PROCEED TO BUY</button>
+
+            <!-- CART CLOSE -->
+
+            <a href="index.html"><i class='bx bx-x' id="cart-close"></i></a>
+        </div>
+
+    </main>
+    <script src="C:\Huzaifa Internship\ASSET\JAVASCRIPT\Cart.js"></script>
+</body>
+
+</html>

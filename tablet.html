@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smile Shop</title>
+  <link rel="stylesheet" href="C:\Online Shopping\ASSET\CSS\Style2.css">
+  <!--------------------- Bootstrap Links ------------------>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="shortcut icon" href="C:\Online Shopping\ASSET\IMAGES\LOGO.lnk">
+  <!-- Google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <!-- boxicons icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <header>
+    <!-- Top Navbar -->
+    <div class="top-navbar">
+      <!-- <img src="https://tse2.mm.bing.net/th?id=OIP.wUqMWqgv3O8E1zIX07ZyNgHaBq&pid=Api&P=0&h=180" alt="welcome"> -->
+      <a class="navbar-brand" href="index.html" id="Logo" style="font-size:40px;"><span id="span1" style="color: green;">Welcome To </span>
+        <span> Smile Shop</span></a>
+      <div class="icons">
+        <a href="login.html"><img src="https://tse1.mm.bing.net/th?id=OIP.Pf6qntGVSE3-V1OA8Nhh_wHaHn&pid=Api&P=0&h=180" alt="REGISTER"width="50px" height="50px" ></a>
+        <a href="signup.html"><img src="https://tse2.mm.bing.net/th?id=OIP.40I5ctwE1Gij9MjtDDRu5gAAAA&pid=Api&P=0&h=180" alt="REGISTER" width="50px" height="40px"></a>
+      </div>
+    </div>
+    <!-- Top Navbar -->
+
+    <div class="modal" id="modelExp" tabindex="-1" aria-labelledby="PopUp" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="model-content">
+          <div class="modal-header">
+            <h1>Successfully Added to Cart</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" id="Logo" style="font-size:40px;">S<span id="span1">mile</span> <span>Shop</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span><img src="C:\html areeb\ASSETS\IMAGES\Images\menu.png" alt="menu" width="30px"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#B1">Product</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Category
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(67 0 86);">
+                <li><a class="dropdown-item" href="smartphone.html">Smart Phone</a></li>
+                <li><a class="dropdown-item" href="tws.html">TWS</a></li>
+                <li><a class="dropdown-item" href="smartwatch.html">Smart Watch</a></li>
+                <li><a class="dropdown-item" href="Headphone.html">Headphone</a></li>
+                <li><a class="dropdown-item" href="Laptop.html">Laptop</a></li>
+                <li><a class="dropdown-item" href="Desktop.html">DESKTOP</a></li>
+                <li><a class="dropdown-item" href="tablet.html">Tablet</a></li>
+                <li><a class="dropdown-item" href="Speaker.html">Speaker</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About Us.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact2.html">Contact</a>
+            </li>
+          </ul>
+          <div class="icons">
+            <a href="Cart.html"><i class='bx bxs-cart' id="cart-icon"></i></a>
+            <div class="box">
+              <div class="cart-count">0</div>
+              <ion-icon name="cart"  id="cart-icon" ></ion-icon>
+            </div>
+        </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Navbar -->
+
+  <!-- Main Content -->
+  <!-- Home Content -->
+  <main>
+    <div class="row">
+      <div class="content my-5 p-5 col-md-6">
+        <h1> <span>Electronic Products</span>
+          <br>
+          Up To <span id="span2" style="color: green;">50%</span> Off <div id="timer">1:30:00</div>
+        </h1>
+        <p>HURRY LIMITED  TIME SALE<br> GRAB GREAT DEALS AS FAST AS YOU CAN
+        </p>
+        <div class="btn"><a href="#B1"><button>Shop Now</button></div></a>
+      </div>
+      <div class="img col-md-6" align="right">
+        <img src="C:\Online Shopping\ASSET\IMAGES\background.png" alt="">
+      </div>
+    </div>
+  <!-- Home Content -->
+
+  <!-- Product Cards -->
+  <div class="container" id="Product-cards">
+    <h1 class="text-center" style="color: green;">PRODUCTS</h1>
+    <div class="items">
+    <div class="row" style="margin-top:30px;">
+      <div class="col-md-3 py-3-md-0">
+        
+        <div class="card  item">
+          <a href="smartphone.html">
+          <img src="https://tse4.mm.bing.net/th?id=OIP.MRSVwQtASTXZ5siw0h3JYAHaHa&pid=Api&P=0&h=180" alt="Iphone 14 Pro Max" height="310px">
+          <div class="card-body">
+            <h3 class="text-center">SMART PHONES</h3>
+            <p class="text-center">starting from Rs:  10000</p>
+            <div class="star text-center">
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+            </div>
+            <h2>₹10000 <span>
+                <li class="bx bxs-cart-alt"></li>
+              </span></h2>
+          </div>
+        </div>
+        </a>
+      </div>
+      <div class="col-md-3 py-3-md-0">
+        <div class="card">
+          <a href="tws.html">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.p9sZU0lfgzdpJbXoDbraCgHaHa&pid=Api&P=0&h=180" alt="Airpods" height="310px">
+          
+          <div class="card-body">
+            <h3 class="text-center">TWS</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            <div class="star text-center">
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+            </div>
+            <h2>₹30000 <span>
+                <li class="bx bxs-cart-alt"></li>
+              </span></h2>
+          </div>
+        </div>
+        </a>
+      </div>
+      <div class="col-md-3 py-3-md-0">
+        <a href="Laptop.html">
+        <div class="card">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.F7BeIFgNqkH2n5owfCvz4wHaGI&pid=Api&P=0&h=180" alt="Macbook" height="310px">
+          <div class="card-body">
+            <h3 class="text-center">LAPTOPS</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            <div class="star text-center">
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+            </div>
+            <h2>₹135000 <span>
+                <li class="bx bxs-cart-alt"></li>
+              </span></h2>
+          </div>
+        </div>
+        </a>
+      </div>
+      <div class="col-md-3 py-3-md-0">
+        <a href="tablet.html">
+        <div class="card">
+          <img src="C:\Online Shopping\ASSET\IMAGES\Ipad.png" alt="Ipad">
+          <div class="card-body">
+            <h3 class="text-center">Tablets</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            <div class="star text-center">
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+            </div>
+            <h2>₹80000 <span>
+                <li class="bx bxs-cart-alt"></li>
+              </span></h2>
+          </div>
+        </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top:30px;">
+      <div class="col-md-3 py-3-md-0">
+        <a href="smartwatch.html">
+        <div class="card">
+          <img src="C:\Online Shopping\ASSET\IMAGES\Smart Watch.png" alt="Smart Watch">
+          <div class="card-body">
+            <h3 class="text-center">Smart Watch's</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            <div class="star text-center">
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+            </div>
+            <h2>₹90000 <span>
+                <li class="bx bxs-cart-alt"></li>
+              </span></h2>
+          </div>
+        </div>
+        </a>
+      </div>
+      <div class="col-md-3 py-3-md-0">
+        <a href="Desktop.html">
+        <div class="card">
+          <img src="C:\Online Shopping\ASSET\IMAGES\Pc Monitor.png" alt="PC Monitor">
+          <div class="card-body">
+            <h3 class="text-center">DESKTOP'S</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            <div class="star text-center">
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+            </div>
+            <h2>₹130000 <span>
+                <li class="bx bxs-cart-alt"></li>
+              </span></h2>
+          </div>
+        </div>
+        </a>
+      </div>
+      <div class="col-md-3 py-3-md-0">
+        <a href="Speaker.html">
+        <div class="card">
+          <img src="https://tse3.mm.bing.net/th?id=OIP.W-efOqwvLu-pbHbPYjzUqwHaHa&pid=Api&P=0&h=180" alt="Iphone 13 Pro">
+          <div class="card-body">
+            <h3 class="text-center">SPEAKERS</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            <div class="star text-center">
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+            </div>
+            <h2>₹75000 <span>
+                <li class="bx bxs-cart-alt"></li>
+              </span></h2>
+          </div>
+        </div>
+        </a>
+      </div>
+      <div class="col-md-3 py-3-md-0">
+        <a href="Headphone.html">
+        <div class="card">
+          <img src="C:\Online Shopping\ASSET\IMAGES\Headphone.png" alt="Headphone">
+          <div class="card-body">
+            <h3 class="text-center">HEADPHONE'S</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            <div class="star text-center">
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+            </div>
+            <h2>₹10000 <span>
+                <li class="bx bxs-cart-alt"></li>
+              </span></h2>
+          </div>
+        </div>
+        </a>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="container" id="other-cards">
+    <div class="row">
+      <div class="col-md-6 py-3 py-md-0">
+        <div class="card">
+          <img src="C:\Online Shopping\ASSET\IMAGES\Card1.png" alt="Dell Laptop">
+          <div class="card-img-overlay">
+            <h3>Best Laptop</h3>
+            <h5>Latest Collection</h5>
+            <p>Up To 50% Off</p>
+            <a href="Laptop.html"><button id="shopnow">Shop Now</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 py-3 py-md-0">
+        <div class="card">
+          <img src="C:\Online Shopping\ASSET\IMAGES\Earphones.png" alt="Earphones">
+          <div class="card-img-overlay">
+            <h3>Best Headphone</h3>
+            <h5>Latest Collection</h5>
+            <p>Up To 50% Off</p>
+            <a href="Headphone.html"><button id="shopnow">Shop Now</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Product Cards -->
+
+   <!-- banner -->
+   <section class="banner">
+    <div class="content">
+      <h1> <span>SMART PHONES</span>
+        <br>
+        Up To <span id="span2" style="color: green;">60%</span> OFF
+      </h1>
+      <p>THE GREAT BONANZA SALE HAS BEEN STARTED .....
+      </p>
+      <div class="btn"><button>Shop Now</button></div>
+
+    </div>
+    <div class="img">
+      <img src="C:\Online Shopping\ASSET\IMAGES\Product.png" alt="Banner">
+    </div>
+  </section>
+  <!-- banner -->
+
+  <div class="container" id="Product-cards">
+
+    <div class="row" style="margin-top:30px;" id="B1">
+      <div class="col-md-3 py-3-md-0">
+        <div class="card">
+          <img src="C:\Online Shopping\ASSET\IMAGES\Washing Machine.png" alt="Washing Machine">
+          <div class="card-body">
+            <h3 class="text-center">Washing Machine</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            <div class="star text-center">
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+            </div>
+            <h2>₹25000<span>
+                <a href="Cart.html"><li class="bx bxs-cart-alt"></li></a>
+              </span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3-md-0">
+        <div class="card">
+          <img src="C:\Online Shopping\ASSET\IMAGES\Cooler.png" alt="Cooler">
+          <div class="card-body">
+            <h3 class="text-center">Cooler</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            <div class="star text-center">
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+            </div>
+            <h2>₹15000 <span>
+              <a href="Cart.html"><li class="bx bxs-cart-alt"></li></a>
+              </span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3-md-0">
+        <div class="card">
+          <img src="C:\Online Shopping\ASSET\IMAGES\MicroOven.png" alt="Micro Oven">
+          <div class="card-body">
+            <h3 class="text-center">Micro Oven</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            <div class="star text-center">
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+            </div>
+            <h2>₹13000 <span>
+                <a href="Cart.html"><li class="bx bxs-cart-alt"></li></a>
+              </span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3-md-0">
+        <div class="card">
+          <img src="C:\Online Shopping\ASSET\IMAGES\Fridge.png" alt="Fridge">
+          <div class="card-body">
+            <h3 class="text-center">Fridges</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            <div class="star text-center">
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+              <i class='bx bxs-star checked'></i>
+            </div>
+            <h2>₹25000 <span>
+                <a href="Cart.html"><li class="bx bxs-cart-alt"></li></a>
+              </span></h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:30px;">
+        <div class="col-md-3 py-3-md-0">
+          <div class="card">
+            <img src="C:\Online Shopping\ASSET\IMAGES\Fan.png" alt="Fan">
+            <div class="card-body">
+              <h3 class="text-center">Fan</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class='bx bxs-star checked'></i>
+                <i class='bx bxs-star checked'></i>
+                <i class='bx bxs-star checked'></i>
+                <i class='bx bxs-star checked'></i>
+                <i class='bx bxs-star checked'></i>
+              </div>
+              <h2>₹5000<span>
+                  <a href="Cart.html"><li class="bx bxs-cart-alt"></li></a>
+                </span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3-md-0">
+          <div class="card">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.DwyHGzUkajpq4Wa-PGtp-QHaGS&pid=Api&P=0&h=180" alt="Fridge2" width="340px">
+            <div class="card-body">
+              <h3 class="text-center">SMART TV's</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class='bx bxs-star checked'></i>
+                <i class='bx bxs-star checked'></i>
+                <i class='bx bxs-star checked'></i>
+                <i class='bx bxs-star checked'></i>
+                <i class='bx bxs-star checked'></i>
+              </div>
+              <h2>₹25000 <span>
+                  <a href="Cart.html"><li class="bx bxs-cart-alt"></li></a>
+                </span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3-md-0">
+          <div class="card">
+            <img src="C:\Online Shopping\ASSET\IMAGES\Gaming CPU.png" alt="Gaming CPU">
+            <div class="card-body">
+              <h3 class="text-center">Gaming CPU</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class='bx bxs-star checked'></i>
+                <i class='bx bxs-star checked'></i>
+                <i class='bx bxs-star checked'></i>
+                <i class='bx bxs-star checked'></i>
+                <i class='bx bxs-star checked'></i>
+              </div>
+              <h2>₹23000 <span>
+                <a href="Cart.html"><li class="bx bxs-cart-alt"></li></a>
+                </span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3-md-0">
+          <div class="card">
+            <img src="C:\Online Shopping\ASSET\IMAGES\Gaming Monitor.png" alt="Gaming Monitor">
+            <div class="card-body">
+              <h3 class="text-center">Gaming Monitor</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class='bx bxs-star checked'></i>
+                <i class='bx bxs-star checked'></i>
+                <i class='bx bxs-star checked'></i>
+                <i class='bx bxs-star checked'></i>
+                <i class='bx bxs-star checked'></i>
+              </div>
+              <h2>₹15000 <span>
+                <a href="Cart.html"><li class="bx bxs-cart-alt"></li></a>
+                </span></h2>
+            </div>
+          </div>
+        </div>
+
+       
+          
+            <!-- other cards -->
+    <div class="container" id="other">
+      <div class="row">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="C:\Online Shopping\ASSET\IMAGES\Home Gadget.png" alt="Home Gadget">
+            <div class="card-img-overlay">
+              <h3>Home Gadget</h3>
+              <p>Latest collection Up To 50% Off</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="C:\Online Shopping\ASSET\IMAGES\Gaming Gadget.png" alt="Gaming Gadget">
+            <div class="card-img-overlay">
+              <h3>Gaming Gadget</h3>
+              <p>Latest collection Up To 50% Off</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="C:\Online Shopping\ASSET\IMAGES\Electronic Gadget.png" alt="Electronic Gadget">
+            <div class="card-img-overlay">
+              <h3>Electronic Gadget</h3>
+              <p>Latest collection Up To 50% Off</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- other cards -->
+
+    <!-- offer -->
+    <div class="container" id="offer">
+      <div class="row">
+        <div class="col-md-3 py-3 py-md-0">
+          <i class='bx bxs-cart-alt'></i>
+          <h3>Free Shipping</h3>
+          <p>On order over ₹2000</p>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <i class='bx bx-rotate-left'></i>
+          <h3>Free Returns</h3>
+          <p>Within 30 days</p>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <i class='bx bxs-truck'></i>
+          <h3>Fast Delivery</h3>
+          <p>World Wide</p>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <i class='bx bxs-like'></i>
+          <h3>Big choice</h3>
+          <p>Of products</p>
+        </div>
+      </div>
+    </div>
+    <!-- offer -->
+     <!-- newslater -->
+     <div class="container" id="newslater">
+      <h3 class="text-center">Subscribe To The Smile Shop For Latest upload.</h3>
+      <div class="input text-center">
+        <input type="text" placeholder="Enter Your Email..">
+        <button id="subscribe">SUBSCRIBE</button>
+      </div>
+    </div>
+    <!-- newslater -->
+
+     <!-- footer -->
+     <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>Smile Shop</h3>
+              <p>
+                Thane <br>
+                Delhi <br>
+                Mumbai <br>
+              </p>
+              <strong>Phone:</strong> +91 7058002557 <br>
+              <strong>Email:</strong> smileshop@.com <br>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Usefull Links</h4>
+             <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policey</a></li>
+             </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+             <ul>
+              <li><a href="#">PS 5</a></li>
+              <li><a href="#">Computer</a></li>
+              <li><a href="#">Gaming Laptop</a></li>
+              <li><a href="#">Mobile Phone</a></li>
+              <li><a href="#">Gaming Gadget</a></li>
+             </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, quibusdam.</p>
+
+              <div class="socail-links mt-3">
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-gmail'></i></a>
+                <a href="#"><i class='bx bxl-snapchat'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Smile Shop</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="#">Huzaifa coding</a>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+    <a href="#" class="arrow"><i><img src="C:\Online Shopping\ASSET\IMAGES\Arrow.png" alt="Arrow"></i></a>
+  <!-- Main Content -->
+</main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous">
+  </script>
+    <script src="C:\html areeb\ASSETS\JAVASCRIPT\script.js"></script>
+    <script src="C:\Online Shopping\ASSET\JAVA SCRIPT\Cart.js"></script>
+</body>
+
+</html>

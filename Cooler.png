@@ -1,0 +1,49 @@
+ /* Customize the color scheme here */
+ body {
+     background-color: #f5f5f5;
+     border: 5px groove rgb(67 0 86);
+ }
+
+ .card {
+     background-color: #fff;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ .btn-add-to-cart {
+     background-color: #007bff;
+     border: none;
+     color: #fff;
+     padding: 8px 12px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+
+ .btn-add-to-cart:hover {
+     background-color: #0056b3;
+ }
+
+ img {
+     max-width: 100%;
+ }
+.arrow {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+ .card {
+     transition: transform 0.5s ease;
+     box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+     border-radius: 0;
+     border: 0;
+     margin-bottom: 1.5em;
+ }
+
+ .card:hover {
+     transform: scale(1.1);
+     background-color: #e5df66;
+ }
